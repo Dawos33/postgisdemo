@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: person-service
+    datasource:
+        password: spyrosoft
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: none
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+
+myapp-swagger:
+        title: Person API
+        description: Person super rest API. Advanced tool for managing an extensive database in postgres.
+        contact-name: Dawid Kościów
+        contact-address: dks@spyro-soft.com
+        contact-url: http://cos.pl
+        path: rest-api
